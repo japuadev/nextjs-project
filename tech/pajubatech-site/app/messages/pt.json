@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "newsAwards": "Notícias e Premiações",
+    "summit": "Summit",
+    "contact": "Contato",
+    "donate": "Aquendar"
+  },
+  "common": {
+    "donate": "Doar",
+    "language": "Idioma"
+  },
+  "home": {
+    "title": "Pajubá Tech",
+    "subtitle": "Tecnologia, impacto e comunidade."
+  }
+}

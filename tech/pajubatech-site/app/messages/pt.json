@@ -2,17 +2,34 @@
   "nav": {
     "about": "Sobre",
     "projects": "Projetos",
-    "newsAwards": "Notícias e Premiações",
+    "news": "Notícias",
+    "awards": "Premiações",
     "summit": "Summit",
     "contact": "Contato",
-    "donate": "Aquendar"
-  },
-  "common": {
-    "donate": "Doar",
-    "language": "Idioma"
+    "donate": "Doar"
   },
   "home": {
-    "title": "Pajubá Tech",
-    "subtitle": "Tecnologia, impacto e comunidade."
+    "title": "Tecnologia ancestral para a transformação social de pessoas LGBTQIAPN+",
+    "subtitle": ""
+  },
+  "contact": {
+    "label": "CONTATO",
+    "title": "Vamos conversar?",
+    "description": "Entre em contato conosco para saber mais sobre nossos projetos, parcerias ou como você pode contribuir para nossa missão.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Como gostaria de ser chamade?",
+      "email": "Email",
+      "emailPlaceholder": "seu@email.com",
+      "message": "Mensagem",
+      "messagePlaceholder": "Como podemos ajudar?",
+      "submit": "Enviar mensagem"
+    },
+    "info": {
+      "email": "Email",
+      "instagram": "Instagram",
+      "location": "Localização",
+      "locationValue": "Pernambuco, Brasil"
+    }
   }
 }

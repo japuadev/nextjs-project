@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "../globals.css";
+import "../styles/globals.css";
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -20,7 +20,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: "Pajubá Tech",
-    description: "Tecnologia, impacto e comunidade.",
+    description: "Tecnologia ancestral para a transformação social de pessoas LGBTQIAPN+",
+    icons: {
+        icon: "/images/logo-pajuba.png",
+    },
 };
 
 export function generateStaticParams() {
@@ -42,10 +45,14 @@ export default async function LocaleLayout({
     const messages = await getMessages({ locale });
 
     return (
-        <NextIntlClientProvider messages={messages} locale={locale}>
-            <Header locale={locale} />
-            <main className="mx-auto max-w-6xl px-4 py-10">{children}</main>
-            <Footer />
-        </NextIntlClientProvider>
+        <html lang={locale}>
+            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                <NextIntlClientProvider messages={messages} locale={locale}>
+                    <Header locale={locale} />
+                    <main className="w-full flex-grow">{children}</main>
+                    <Footer />
+                </NextIntlClientProvider>
+            </body>
+        </html>
     );
 }

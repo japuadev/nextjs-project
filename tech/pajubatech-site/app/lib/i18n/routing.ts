@@ -6,8 +6,9 @@ export const defaultLocale: AppLocale = "pt";
 export const navItems = [
     { key: "about", href: "/sobre" },
     { key: "projects", href: "/projetos" },
-    { key: "newsAwards", href: "/noticias" },
+    { key: "news", href: "/noticias" },
+    { key: "awards", href: "/premiacoes" },
     { key: "summit", href: "/summit" },
     { key: "contact", href: "/contato" },
-    { key: "donate", href: "/aquendar" },
+    { key: "donate", href: "/doar" },
 ] as const;
